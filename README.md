@@ -52,7 +52,6 @@ real cohort (local, private; Mendeley DOI 10.17632/wrhr5862cb.4)
 | `scripts/make_tables.py` | Build manuscript tables from `outputs/results.json` |
 | `run_pipeline.py` | End-to-end orchestrator → writes `outputs/results.json` (single source of truth) |
 | `config/default.yaml` | Human-readable mirror of `paper5_pipeline/config.py` defaults |
-| `data/` | Schema crosswalk + example-data generator (no real data tracked) |
 | `tests/` | Smoke tests on example data |
 
 > The figure-generation script (`scripts/make_figures.py`) and every generated
@@ -65,7 +64,7 @@ real cohort (local, private; Mendeley DOI 10.17632/wrhr5862cb.4)
 python -m venv .venv && . .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# 2. Generate an example cohort (writes to git-ignored data/example/)
+# 2. Generate an example cohort 
 python data/example/generate_example.py --n 600 --out data/example/cohort.xlsx
 
 # 3. Run the full pipeline (fast smoke run)
