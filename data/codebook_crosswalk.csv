@@ -1,0 +1,42 @@
+variable,role,type,allowed_values,description
+education,node_feature;stratum,ordinal,"1=low;2=medium;3=high",Highest completed education level
+marital_status,node_feature;stratum,nominal,"0=single;1=partnered;2=separated/divorced;3=widowed",Partnership status
+age,node_feature,continuous,"23-89",Age at baseline (years)
+bmi,node_feature,continuous,">0",Body mass index (kg/m^2)
+menstruation_firsttime_age,node_feature,continuous,"8-18",Age at menarche (years)
+pregnancy_number,node_feature,count,">=0",Number of pregnancies (parity)
+menopause_yn,node_feature,binary,"0=no;1=yes",Postmenopausal status
+contraceptive_kind,node_feature,nominal,"0=none;1,2,4,6=hormonal systemic;3,5=hormonal local;7=mechanical;888=other",Contraceptive method
+alcohol,node_feature,ordinal,">=0",Alcohol consumption frequency code
+smokingstatus,node_feature,ordinal,"0=never;1=current;2=ex",Smoking status (recoded never<ex<current)
+bust,node_feature,continuous,">0",Bust circumference (cm)
+cupsize,node_feature,ordinal,">=0",Brassiere cup size code
+diagnosis,node_feature;stratum,nominal,"1=breast cancer;2=DCIS;3=fibroadenoma;4=other benign",Histopathological diagnosis (1,2=malignant)
+pre_op,node_feature,binary,"0=no;1=yes",Pre-operative assessment flag
+breastcancer_first,node_feature,binary,"0=no;1=yes",First breast-cancer episode
+cancer_breast,node_feature,binary,"0=no;1=yes",Breast cancer present
+comorb_none,node_feature,binary,"0=no;1=yes",No comorbidity
+comorb_heart,node_feature,binary,"0=no;1=yes",Cardiac comorbidity
+comorb_hypertension,node_feature,binary,"0=no;1=yes",Hypertension
+comorb_paod,node_feature,binary,"0=no;1=yes",Peripheral arterial occlusive disease
+comorb_lung,node_feature,binary,"0=no;1=yes",Pulmonary comorbidity
+comorb_diabetes,node_feature,binary,"0=no;1=yes",Diabetes mellitus
+comorb_kidneys,node_feature,binary,"0=no;1=yes",Renal comorbidity
+comorb_liver,node_feature,binary,"0=no;1=yes",Hepatic comorbidity
+comorb_stroke,node_feature,binary,"0=no;1=yes",Cerebrovascular accident history
+comorb_neuological,node_feature,binary,"0=no;1=yes",Neurological comorbidity
+comorb_cancerlast5years,node_feature,binary,"0=no;1=yes",Other cancer within 5 years
+comorb_depression,node_feature,binary,"0=no;1=yes",Depression
+comorb_gastrointestinal,node_feature,binary,"0=no;1=yes",Gastrointestinal comorbidity
+comorb_endometriosis,node_feature,binary,"0=no;1=yes",Endometriosis
+comorb_arthritis,node_feature,binary,"0=no;1=yes",Arthritis
+comorb_incontinence,node_feature,binary,"0=no;1=yes",Incontinence
+comorb_uti,node_feature,binary,"0=no;1=yes",Urinary tract infection history
+brbi,target,continuous,"0-100",EORTC BR23 body image (higher=better)
+brsef,target;binary,continuous,"0-100",EORTC BR23 sexual functioning (higher=better; <50 flags poor)
+brfu,target,continuous,"0-100",EORTC BR23 future perspective
+brhl,target,continuous,"0-100",EORTC BR23 hair-loss symptoms
+brbs,target,continuous,"0-100",EORTC BR23 breast symptoms
+ef,target,continuous,"0-100",EORTC C30 emotional functioning
+sf,target,continuous,"0-100",EORTC C30 social functioning
+fi,target,continuous,"0-100",EORTC C30 financial difficulties (symptom scale)

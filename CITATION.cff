@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the accompanying article."
+title: "Equity-Aware Graph Attention Networks for Breast-Cancer Patient-Reported Outcomes"
+abstract: >-
+  Code-only research software for a multi-task Graph Attention Network that
+  models eight EORTC QLQ-C30/BR23 patient-reported outcome scales over a
+  patient-similarity graph, with explainable-AI and algorithmic-fairness
+  auditing across social-determinant strata.
+type: software
+license: MIT
+version: 1.0.0
+date-released: "2026-06-26"
+repository-code: "https://github.com/research-AI-studies/equity-gat-prom"
+authors:
+  - name: "The Authors"
+keywords:
+  - graph attention network
+  - patient-reported outcomes
+  - breast cancer
+  - explainable AI
+  - algorithmic fairness
+  - health equity

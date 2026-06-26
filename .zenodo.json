@@ -1,0 +1,28 @@
+{
+  "title": "Equity-Aware Graph Attention Networks for Breast-Cancer Patient-Reported Outcomes",
+  "description": "Code-only research software for a multi-task Graph Attention Network that models eight EORTC QLQ-C30/BR23 patient-reported outcome scales over a patient-similarity graph, with explainable-AI (SHAP, LIME, GNNExplainer, attention) and algorithmic-fairness auditing across social-determinant strata. No patient data is included. Accompanies the manuscript submitted to the Journal of Biomedical Informatics.",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "graph attention network",
+    "patient-reported outcomes",
+    "breast cancer",
+    "explainable AI",
+    "algorithmic fairness",
+    "EORTC QLQ-C30",
+    "EORTC QLQ-BR23",
+    "health equity"
+  ],
+  "creators": [
+    { "name": "The Authors" }
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "10.17632/wrhr5862cb.4",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    }
+  ]
+}

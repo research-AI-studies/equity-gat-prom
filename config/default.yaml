@@ -1,0 +1,42 @@
+# Human-readable mirror of the effective defaults defined in
+# paper5_pipeline/config.py (the authoritative source). Editing this file does
+# NOT change the run; override behaviour through the environment variables noted
+# below or by editing paper5_pipeline/config.py directly.
+
+data:
+  # Real cohort: Charite PROM Baseline, Mendeley DOI 10.17632/wrhr5862cb.4
+  # (not redistributed). Default points at the git-ignored example cohort.
+  source_env: PAPER5_RAW
+  default: data/example/cohort.xlsx
+
+reproducibility:
+  seed: 42
+  extra_seeds: [43, 44, 45, 46, 47]
+
+graph:
+  construction: symmetric_knn_on_gower
+  k_grid: [10, 15, 20, 25, 30, 40, 50]
+  threshold_grid: [0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80]   # sensitivity only
+
+model:
+  type: multi_task_gat
+  task_heads: 8            # 7 regression + 1 binary (sexual functioning <50)
+  baselines: [mlp, gcn, xgboost]
+  uncertainty_weighting: homoscedastic
+
+training:
+  split: [0.70, 0.15, 0.15]
+  cv_folds: 5
+  random_search_n: 15      # env: PAPER5_SEARCH_N
+  max_epochs: 250          # env: PAPER5_EPOCHS
+  patience: 30
+  grad_clip: 5.0
+  n_bootstrap: 1000
+
+explainability:
+  methods: [kernel_shap, lime, gnnexplainer, gat_attention]
+
+fairness:
+  metrics: [dpd, eod, predictive_parity_ratio, calibration_slope]
+  action_threshold: 0.10
+  mitigation: reweighing

@@ -1,0 +1,11 @@
+# Normalize line endings on checkin; check out platform-native
+* text=auto
+
+# Treat common asset/data formats as binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.xlsx binary
+*.npy binary
+*.pt binary
+*.pth binary

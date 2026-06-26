@@ -1,0 +1,106 @@
+# ============================================================================
+# PUBLICATION-SAFETY GITIGNORE
+# Only source code is published. Raw/input/processed/output data and every
+# generated artefact (figures, charts, tables, model weights, logs, manuscript)
+# are NEVER committed or pushed to any public remote.
+# ============================================================================
+
+# --- Data (raw, input, interim, processed, example instances) -------------
+data/raw/
+data/input/
+data/interim/
+data/processed/
+data/external/
+data/example/*.csv
+data/example/*.xlsx
+data/example/*.parquet
+*.xlsx
+*.xls
+*.csv
+*.parquet
+*.feather
+*.dta
+*.sav
+*.sas7bdat
+
+# --- Outputs / results -------------------------------------------------------
+outputs/
+results/
+artefacts/
+figures/
+reports/
+tables/
+*.json
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.tif
+*.tiff
+*.eps
+
+# --- Manuscript / documents (kept offline) ----------------------------------
+*.docx
+*.doc
+*.pptx
+
+# --- Model weights / checkpoints --------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+checkpoints/
+mlruns/
+wandb/
+
+# --- Logs --------------------------------------------------------------------
+logs/
+*.log
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Environment / secrets ---------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# --- OS / editor -------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Private, offline-only scripts (never publish) ---------------------------
+scripts/make_figures.py
+
+# ============================================================================
+# Explicit allow-list re-includes: small, non-sensitive code-adjacent files
+# that must remain tracked despite the broad patterns above.
+# ============================================================================
+!data/codebook_crosswalk.csv
+!requirements.txt
+!config/*.yaml
+!.zenodo.json
