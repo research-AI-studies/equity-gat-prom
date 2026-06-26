@@ -1,7 +1,7 @@
 # Equity-Aware Graph Attention Networks for Breast-Cancer Patient-Reported Outcomes
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-<!-- Zenodo DOI badge is added immediately after the first archived release. -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20913218.svg)](https://doi.org/10.5281/zenodo.20913218)
 
 A reproducible, **code-only** analytical pipeline that models eight EORTC
 QLQ-C30/BR23 patient-reported outcome (PRO) scales with a **multi-task Graph
@@ -93,9 +93,10 @@ The dataset analysed in the manuscript is publicly available from Mendeley Data
 (DOI: `10.17632/wrhr5862cb.4`). Processed data, intermediate artefacts, and all
 generated outputs are not publicly released; they remain with the corresponding
 author and are available on reasonable request, subject to the data licence.
-A versioned archive of this repository is preserved on Zenodo; the citable
-concept DOI (which always resolves to the latest release) is shown on the
-repository's Zenodo record and recorded in [`CITATION.cff`](CITATION.cff).
+A versioned archive of this repository is preserved on Zenodo under the citable
+concept DOI [`10.5281/zenodo.20913218`](https://doi.org/10.5281/zenodo.20913218),
+which always resolves to the latest release (v1.0.0:
+[`10.5281/zenodo.20913219`](https://doi.org/10.5281/zenodo.20913219)).
 
 ## Citation
 
@@ -103,7 +104,7 @@ If you use this software, please cite the archived release:
 
 ```
 The Authors (2026). Equity-Aware Graph Attention Networks for Breast-Cancer
-Patient-Reported Outcomes. Zenodo. See CITATION.cff for the citable DOI.
+Patient-Reported Outcomes (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.20913218
 ```
 
 ## Licence
